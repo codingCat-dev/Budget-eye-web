@@ -1,68 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
-  @media only screen and (max-width: 50em) {
-    html {
-      font-size: 57%; } }
-  @media only screen and (max-width: 40.625em) {
-    html {
-      font-size: 52%; } }
-  @media only screen and (max-width: 28.125em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 21.875em) {
-    html {
-      font-size: 45%; } }
-
-
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 57%;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 21.875em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 li {
   display: inline-block;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #333;
+}
 
 h3 {
   letter-spacing: 0.1rem;
   line-height: 1.8;
-  font-weight: 800; }
-  @media only screen and (max-width: 50em) {
-    h3 {
-      line-height: 1.3; } }
-  @media only screen and (max-width: 40.625em) {
-    h3 {
-      line-height: 1.1; } }
-  @media only screen and (max-width: 21.875em) {
-    h3 {
-      letter-spacing: 0; } }
+  font-weight: 800;
+  color: #333;
+}
+@media only screen and (max-width: 50em) {
+  h3 {
+    line-height: 1.3;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  h3 {
+    line-height: 1.1;
+  }
+}
+@media only screen and (max-width: 21.875em) {
+  h3 {
+    letter-spacing: 0;
+  }
+}
 
 .flex {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .link {
   font-size: 2rem;
-  font-family: "Viaoda Libre", cursive;
+  font-family: 'Viaoda Libre', cursive;
   font-weight: 600;
   margin-right: 1rem;
   letter-spacing: 0.1rem;
-  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
 
 .navigation {
   justify-content: space-between;
@@ -72,86 +93,112 @@ h3 {
   width: 100%;
   overflow: hidden;
   padding: 3rem;
-  text-align: center; }
-  .navigation-link {
-    margin-left: 1rem; }
-  .navigation-app {
-    color: #f1f7ed; }
+  text-align: center;
+}
+.navigation-link {
+  margin-left: 1rem;
+}
+.navigation-app {
+  color: #f1f7ed;
+}
 
 .logo {
   width: 6rem;
-  height: 6rem; }
+  height: 6rem;
+}
 
 .app-box {
   background-color: #229d76;
   padding: 1rem;
   clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
-  transition: transform 0.3s ease; }
-  .app-box:hover {
-    transform: translateY(-8%); }
+  transition: transform 0.3s ease;
+}
+.app-box:hover {
+  transform: translateY(-8%);
+}
 
 .header {
-  position: relative; }
-  .header-title {
-    position: absolute;
-    top: 18%;
-    left: 5%;
-    font-size: 3.5rem;
-    font-family: "Viaoda Libre", cursive;
-    margin: 1rem; }
+  position: relative;
+}
+.header-title {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 3.5rem;
+  font-family: 'Viaoda Libre', cursive;
+  margin: 1rem;
+}
 
 .title {
   background-color: #229d76;
   padding: 2rem;
   clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
-  color: #f1f7ed; }
-  @media only screen and (max-width: 40.625em) {
-    .title {
-      padding: 1rem; } }
-  @media only screen and (max-width: 28.125em) {
-    .title {
-      clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
-      padding: 0 1rem 0 1rem;
-      word-wrap: break-word;
-      font-size: 3rem; } }
+  color: #f1f7ed;
+}
+@media only screen and (max-width: 40.625em) {
+  .title {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .title {
+    clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
+    padding: 0 1rem 0 1rem;
+    word-wrap: break-word;
+    font-size: 3rem;
+  }
+}
 
 .title-image {
   width: 100%;
   height: 93vh;
   object-fit: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .about {
   margin: 10rem 0;
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
-  padding: 1rem; }
-  .about-card {
-    margin: 2rem 0; }
-  .about h4 {
-    font-size: 3rem;
-    font-family: "Viaoda Libre", cursive; }
+  padding: 1rem;
+}
+.about-card {
+  margin: 2rem 0;
+}
+.about h4 {
+  font-size: 3rem;
+  font-family: 'Viaoda Libre', cursive;
+}
+.about p {
+  width: 50%;
+  margin: 2rem auto;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 50em) {
   .about p {
-    width: 50%;
-    margin: 2rem auto;
-    font-family: "Roboto Slab", serif;
-    font-size: 2rem; }
-    @media only screen and (max-width: 50em) {
-      .about p {
-        width: 70%; } }
-    @media only screen and (max-width: 40.625em) {
-      .about p {
-        width: 80%; } }
-  .about span {
-    color: #229d76; }
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .about p {
+    width: 80%;
+  }
+}
+.about span {
+  color: #229d76;
+}
 
 .footer {
   background-color: black;
   color: #f1f7ed;
   height: 10rem;
-  font-family: "Viaoda Libre", cursive; }
-  .footer-link {
-    color: #f1f7ed; }
-  .footer span {
-    font-size: 2rem; }
+  font-family: 'Viaoda Libre', cursive;
+}
+.footer-link {
+  color: #f1f7ed;
+}
+.footer span {
+  font-size: 2rem;
+}
